@@ -1,0 +1,213 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #FFF8E7; /* Soft white cake background */
+  color: #333333; /* Dark gray text for contrast */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Amplifier Container */
+.amplifier-container {
+  max-width: 1200px;
+  width: 95%;
+  height: auto;
+  background: linear-gradient(135deg, #FFB6C1, #FFD700); /* Pink and yellow gradient for sprinkles */
+  border: 8px solid #F8F8FF; /* Frosting-like border */
+  border-radius: 50px 50px 0 0; /* Rounded top corners, flat bottom */
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  padding-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Amplifier Header */
+.amplifier-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF8E7; /* Cake-like background */
+  padding: 20px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  box-shadow: inset 0px -3px 5px rgba(0, 0, 0, 0.1); /* Inset shadow */
+}
+
+/* Circle Logo */
+.circle-logo {
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(circle, #FFB6C1, #FFD700); /* Pink and yellow frosting-like gradient */
+  border: 3px solid #FFD700; /* Gold border */
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Brand Name */
+.brand-name {
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  color: #FF69B4; /* Hot pink for branding */
+  text-transform: uppercase;
+  text-shadow: 0px 2px 4px rgba(255, 192, 203, 0.8); /* Pink glow */
+}
+
+/* Highlight Section */
+.highlight {
+  text-align: center;
+  background: linear-gradient(135deg, rgba(255, 182, 193, 0.1), rgba(255, 215, 0, 0.1)); /* Light frosting gradient */
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  color: #333333; /* Dark gray for readability */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Control Panel */
+.control-panel {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.8)); /* Light frosting effect */
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: inset 0px 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Panel Title */
+.panel-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #FF69B4; /* Hot pink */
+  text-shadow: 0px 1px 2px rgba(255, 105, 180, 0.8); /* Pink glow */
+}
+
+/* Knobs */
+.knob-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.knob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.knob-link {
+  display: block;
+}
+
+.knob-indicator {
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle at 30% 30%, #FFD700, #FF69B4); /* Gold and pink gradient */
+  border: 2px solid #FFF8E7;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2), inset 0px -4px 6px rgba(255, 255, 255, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.knob-indicator:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3), inset 0px -6px 8px rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.knob-indicator:active {
+  transform: scale(1.1);
+  box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.2), 0px -2px 4px rgba(255, 255, 255, 0.6);
+}
+
+.knob-text {
+  font-size: 0.9rem;
+  color: #333333; /* Dark gray text */
+  margin-top: 5px;
+  transition: color 0.2s ease;
+}
+
+.knob-text:hover {
+  color: #FF69B4;
+  cursor: pointer;
+}
+
+/* Track Display */
+.track-display iframe {
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  background: transparent;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Amplifier Footer */
+.amplifier-footer {
+  background-color: #FFF8E7; /* Cake-like background */
+  color: #333333;
+  text-align: center;
+  padding: 15px;
+  border-top: 8px solid #FFD700; /* Gold border */
+  margin-top: auto;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* Footer Projection */
+.amplifier-footer::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(135deg, #FFB6C1, #FFD700); /* Match container gradient */
+  border: 8px solid #F8F8FF;
+  border-top: none;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+/* Footer Text */
+.amplifier-footer p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.amplifier-footer a {
+  color: #FF69B4;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.amplifier-footer a:hover {
+  color: #FFD700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .brand-name {
+    font-size: 1.5rem;
+  }
+
+  .knob-indicator {
+    width: 40px;
+    height: 40px;
+  }
+
+  .knob-text {
+    font-size: 0.8rem;
+  }
+
+  .circle-logo {
+    width: 60px;
+    height: 60px;
+  }
+}
